@@ -691,7 +691,7 @@
         // Set default font
         doc.setFont("helvetica", "normal", "normal");
 
-        // Header
+        // Header on first page
         doc.setFontSize(16);
         doc.text("Self-Assessment Rapport", 40, 40);
         doc.setFontSize(12);
@@ -701,11 +701,10 @@
         y += 20;
         doc.text("Datum: " + formData.assessmentDate, 40, y);
         y += 20;
-        doc.setFontSize(12); // Setting Font size for research Question
         doc.text("Onderzoeksvraag: " + formData.researchQuestion, 40, y);
         y += 30;
 
-        // Vaste reflectievragen (volgorde 1 t/m 9)
+        // Reflection questions array (for questions 1-9)
         const reflectionQuestions = [
           "In hoeverre is mijn onderzoeksvraag gericht op een complex en integraal bedrijfskundig vraagstuk?",
           "Hoe leidt mijn onderzoeksvraag tot het ontwerpen van meerdere oplossingsrichtingen?",
@@ -724,29 +723,28 @@
         doc.setFontSize(12);
 
         for (let i = 0; i < 9; i++) {
-          // Question
+          // Process the question
           const question = i + 1 + ". " + reflectionQuestions[i];
           let questionLines = doc.splitTextToSize(
             question,
             pageWidth - 2 * xOffsetQuestion - 20
-          ); // Account for margins
+          );
 
           if (y + questionLines.length * 14 + 20 > pageHeight - 50) {
             doc.addPage();
             y = 70;
             addPageHeader(doc);
+            doc.setFontSize(12); // Reset font size for content
           }
 
-          //Iterate through the question lines to write each line by line
           for (const line of questionLines) {
             doc.text(line, xOffsetQuestion, y);
-            y += 14; //Line height
+            y += 14;
           }
           y += 5;
 
-          // Answer
+          // Process the answer
           const answer = "Antwoord: " + formData.responses[i];
-
           let answerLines = doc.splitTextToSize(
             answer,
             pageWidth - 2 * xOffsetAnswer - 20
@@ -756,15 +754,17 @@
             doc.addPage();
             y = 70;
             addPageHeader(doc);
+            doc.setFontSize(12); // Reset font size for content
           }
-          //Iterate through the question lines to write each line by line
+
           for (const line of answerLines) {
             doc.text(line, xOffsetAnswer, y);
-            y += 14; //Line height
+            y += 14;
           }
           y += 30;
         }
-        // General Reflection questions (fixed text, at the end)
+
+        // General Reflection questions at the end
         doc.setFontSize(12);
         doc.text("Algemene Reflectie", 40, y);
         y += 20;
@@ -777,22 +777,23 @@
 
         for (let i = 0; i < 3; i++) {
           const question = i + 1 + ". " + generalQuestions[i];
-          let questionLines = doc.splitTextToSize(question, pageWidth - 80); // Reduced width for margin
+          let questionLines = doc.splitTextToSize(question, pageWidth - 80);
 
           if (y + questionLines.length * 14 + 20 > pageHeight - 50) {
             doc.addPage();
             y = 70;
             addPageHeader(doc);
+            doc.setFontSize(12); // Reset font size for content
           }
           doc.text(questionLines, 40, y);
-          y += questionLines.length * 14 + 20; //Added extra spacing.
+          y += questionLines.length * 14 + 20;
         }
 
-        // Footer with page numbers (add to all pages)
+        // Footer with page numbers on all pages
         const totalPages = doc.internal.getNumberOfPages();
-        doc.setFontSize(10); // Font size for footer
+        doc.setFontSize(10);
         for (let i = 1; i <= totalPages; i++) {
-          doc.setPage(i); // Set the current page
+          doc.setPage(i);
           const footerText = `Pagina ${i} van ${totalPages}`;
           doc.text(
             footerText,
@@ -805,13 +806,14 @@
       }
 
       function addPageHeader(doc) {
-        // Add any specific header content here, e.g., Logo, Document Title, etc.
+        // Add header content (header font size is set to 14)
         doc.setFontSize(14);
-        doc.text("Self-Assessment Rapport", 40, 40); // Example header text
+        doc.text("Self-Assessment Rapport", 40, 40);
       }
 
-      function savePdfFile(doc) {
-        doc.save("self-assessment-rapport.pdf");
+      function savePdfFile(doc, name) {
+        const fileName = "self-assessment-rapport-" + name + ".pdf";
+        doc.save(fileName);
       }
 
       document.getElementById("savePdf").addEventListener("click", function () {
@@ -824,7 +826,7 @@
           }
 
           const doc = generatePdfDocument(formData);
-          savePdfFile(doc);
+          savePdfFile(doc, formData.studentName);
         } catch (error) {
           console.error("Fout bij het genereren van PDF:", error);
           M.toast({
