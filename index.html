@@ -812,7 +812,8 @@
       }
 
       function savePdfFile(doc, name) {
-        const fileName = "self-assessment-rapport-" + name + ".pdf";
+        const fileName =
+          "self-assessment-rapport-" + name.toLowerCase() + ".pdf";
         doc.save(fileName);
       }
 
