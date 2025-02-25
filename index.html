@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Self-Assessment Onderzoeksvraag</title>
-    <!-- Normalize CSS (or Reset CSS) -->
+    <!-- Normalize CSS (of Reset CSS) -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
@@ -38,7 +38,7 @@
 
       body {
         padding: 20px;
-        font-size: 1rem; /* Base font size */
+        font-size: 1rem;
       }
 
       .card {
@@ -51,35 +51,33 @@
       }
 
       .indented-list li {
-        list-style-type: disc !important; /*Force bullets */
-        display: list-item !important; /*Ensure li is treated as a list item*/
+        list-style-type: disc !important;
+        display: list-item !important;
       }
 
-      /* Reflection questions icon styling */
+      /* Styling voor de reflectievragen */
       .reflection-list {
         list-style: none;
-        padding-left: 0; /*Remove indentation from the bullet */
+        padding-left: 0;
       }
 
       .reflection-list li {
-        display: flex; /* Enable flexbox layout */
-        align-items: center; /* Vertically center the icon and text */
+        display: flex;
+        align-items: center;
         margin-bottom: 0.5em;
       }
 
       .reflection-list li i.material-icons {
-        margin-right: 0.5em; /* Adjust spacing between icon and text */
-        font-size: 1.2em; /* Adjust icon size as needed */
-        /* vertical-align: middle; /* Align icon vertically within the li */
+        margin-right: 0.5em;
+        font-size: 1.2em;
       }
 
-      /* Optional: Style for the loading spinner */
+      /* Optioneel: Style voor de loading spinner */
       .spinner-container {
         text-align: center;
         margin-top: 20px;
       }
 
-      /* Adjust text size responsively */
       h1 {
         font-size: 2rem;
       }
@@ -98,45 +96,29 @@
         <div class="card-content">
           <span class="card-title">Instructies</span>
           <ul class="indented-list">
+            <li>Voor elke eindkwalificatie zijn beoordelingscriteria geformuleerd.</li>
             <li>
-              Voor elke eindkwalificatie zijn beoordelingscriteria geformuleerd.
+              Beoordeel in hoeverre je onderzoeksvraag en de beoogde aanpak aansluiten bij deze criteria.
             </li>
             <li>
-              Beoordeel in hoeverre je onderzoeksvraag en de beoogde aanpak
-              aansluiten bij deze criteria.
-            </li>
-            <li>
-              Gebruik de reflectievragen om dieper na te denken over mogelijke
-              verbeteringen.
+              Gebruik de reflectievragen om al vanaf het begin van je afstudeertraject na te denken over hoe je bewijs ontwikkelt voor de eindkwalificaties.
             </li>
             <li>Vul alle velden in het formulier zo volledig mogelijk in.</li>
-            <li>
-              Klik op de "Bewaar als PDF" knop om een rapport te genereren.
-            </li>
+            <li>Klik op de "Bewaar als PDF" knop om een rapport te genereren.</li>
             <hr />
             <li>
               <strong>Gebruik het gegenereerde rapport:</strong>
               <ul class="indented-list">
+                <li>... als basis voor een gesprek met je begeleider over de focus en aanpak van je onderzoek.</li>
+                <li>... om je onderzoeksvraag verder aan te scherpen en te verfijnen.</li>
                 <li>
-                  ... als basis voor een gesprek met je begeleider over de focus
-                  en aanpak van je onderzoek.
-                </li>
-                <li>
-                  ... om je onderzoeksvraag verder aan te scherpen en te
-                  verfijnen.
-                </li>
-                <li>
-                  ... als onderdeel van je reflectie op je professionele
-                  ontwikkeling.
+                  ... als onderdeel van je reflectie op je professionele ontwikkeling en bewijsvoering tijdens het traject.
                 </li>
               </ul>
             </li>
             <hr />
             <li>
-              <strong>NB: </strong>De gegevens in dit formulier en de
-              bijbehorende rapportage zijn strikt vertrouwelijk en uitsluitend
-              bestemd voor persoonlijk gebruik. Deze informatie wordt op geen
-              enkele wijze gedeeld met of verzonden naar externe partijen.
+              <strong>NB:</strong> De gegevens in dit formulier en de bijbehorende rapportage zijn strikt vertrouwelijk en uitsluitend bestemd voor persoonlijk gebruik.
             </li>
           </ul>
         </div>
@@ -151,12 +133,7 @@
               <label for="studentName">Voornaam student</label>
             </div>
             <div class="input-field col s12 m6">
-              <input
-                id="assessmentDate"
-                type="date"
-                name="assessmentDate"
-                required
-              />
+              <input id="assessmentDate" type="date" name="assessmentDate" required />
               <label for="assessmentDate">Datum</label>
             </div>
           </div>
@@ -174,9 +151,7 @@
                 rows="4"
                 required
               ></textarea>
-              <label for="researchQuestion"
-                >Voer hier de tekst van je onderzoeksvraag in</label
-              >
+              <label for="researchQuestion">Voer hier de tekst van je onderzoeksvraag in</label>
             </div>
           </div>
         </div>
@@ -184,29 +159,20 @@
         <!-- Vraag 1: Probleem herkennen en diagnosticeren -->
         <div class="card">
           <div class="card-content">
-            <span class="card-title"
-              >1. Probleem herkennen en diagnosticeren</span
-            >
+            <span class="card-title">1. Probleem herkennen en diagnosticeren</span>
             <p><strong>Criteria:</strong></p>
             <ul class="indented-list">
               <li>
-                Beschrijft een complex bedrijfskundig vraagstuk vanuit een
-                integraal perspectief
+                Je signaleert en herkent een complex* bedrijfskundig probleem of vraagstuk vanuit een integraal perspectief, identificeert en ontleedt mogelijke oorzaken en dwarsverbanden. Je gebruikt daarbij een geschikte analysetechniek en stelt de passende diagnose om de organisatie te verbeteren of te vernieuwen.
               </li>
-              <li>
-                Identificeert en analyseert mogelijke oorzaken en dwarsverbanden
-              </li>
-              <li>Gebruikt geschikte bedrijfskundige analysetechnieken</li>
-              <li>Stelt een passende bedrijfskundige diagnose</li>
             </ul>
             <p><strong>Reflectievraag:</strong></p>
             <ul class="reflection-list">
               <li>
                 <i class="material-icons">lightbulb_outline</i>
                 <span>
-                  In hoeverre is mijn onderzoeksvraag gericht op een complex en
-                  integraal bedrijfskundig vraagstuk?</span
-                >
+                  Hoe zal mijn onderzoeksvraag mij tijdens het afstudeertraject stimuleren om bewijs te ontwikkelen dat aantoont dat ik een complex probleem herken en diagnosticeer met de juiste analysetechnieken?
+                </span>
               </li>
             </ul>
             <div class="input-field">
@@ -220,7 +186,7 @@
               <label for="response1">Jouw antwoord</label>
             </div>
             <p id="question1-description" class="visually-hidden">
-              Answer to question about recognizing and diagnosing problems.
+              Antwoord op de vraag over probleemherkenning en -diagnose.
             </p>
           </div>
         </div>
@@ -232,24 +198,16 @@
             <p><strong>Criteria:</strong></p>
             <ul class="indented-list">
               <li>
-                Levert op basis van de diagnose verschillende
-                oplossingsrichtingen en één voorkeursontwerp
+                Je levert in een concreet bedrijfsproject verschillende scenario’s en één voorkeursontwerp op. De scenario’s zijn gebaseerd op nieuwe ideeën die je signaleert, verzamelt en gebruikt, rekening houdend met eisen, praktijkvoorbeelden en trends. Het voorkeursontwerp helpt de organisatie haar processen te verbeteren en effectiever te opereren.
               </li>
-              <li>Oplossingsrichtingen zijn gebaseerd op nieuwe ideeën</li>
-              <li>
-                Houdt rekening met het programma van eisen, praktijkvoorbeelden
-                en de laatste ontwikkelingen en trends
-              </li>
-              <li>Verbetert bedrijfsprocessen</li>
             </ul>
             <p><strong>Reflectievraag:</strong></p>
             <ul class="reflection-list">
               <li>
                 <i class="material-icons">lightbulb_outline</i>
                 <span>
-                  Hoe leidt mijn onderzoeksvraag tot het ontwerpen van meerdere
-                  oplossingsrichtingen?</span
-                >
+                  Hoe motiveert mijn onderzoeksvraag mij om tijdens het afstudeertraject diverse scenario’s en een helder voorkeursontwerp te ontwikkelen, zodat ik bewijs lever voor mijn ontwerpkracht?
+                </span>
               </li>
             </ul>
             <div class="input-field">
@@ -263,7 +221,7 @@
               <label for="response2">Jouw antwoord</label>
             </div>
             <p id="question2-description" class="visually-hidden">
-              Answer to question about designing solutions.
+              Antwoord op de vraag over ontwerpen.
             </p>
           </div>
         </div>
@@ -275,14 +233,7 @@
             <p><strong>Criteria:</strong></p>
             <ul class="indented-list">
               <li>
-                Begeleidt een complexe bedrijfskundige verandering met
-                uiteenlopende belangen
-              </li>
-              <li>
-                Kan zelfstandig een integraal advies opstellen en uitbrengen
-              </li>
-              <li>
-                Draagt zorg voor implementatie en borging van de oplossing
+                Je begeleidt een complexe bedrijfskundige verandering, waarbij uiteenlopende belangen een rol spelen. Je stelt een integraal advies op, creëert draagvlak en zorgt voor een gestructureerde implementatie en borging van het veranderplan.
               </li>
             </ul>
             <p><strong>Reflectievraag:</strong></p>
@@ -290,9 +241,8 @@
               <li>
                 <i class="material-icons">lightbulb_outline</i>
                 <span>
-                  Hoe adresseert mijn onderzoeksvraag de begeleiding van een
-                  complexe verandering met diverse belangen?</span
-                >
+                  Hoe zal mijn onderzoeksvraag mij aanzetten om gedurende het afstudeertraject systematisch bewijs te verzamelen dat aantoont dat ik complexe veranderprocessen kan begeleiden en draagvlak creëer?
+                </span>
               </li>
             </ul>
             <div class="input-field">
@@ -306,7 +256,7 @@
               <label for="response3">Jouw antwoord</label>
             </div>
             <p id="question3-description" class="visually-hidden">
-              Answer to question about managing change.
+              Antwoord op de vraag over veranderen.
             </p>
           </div>
         </div>
@@ -317,11 +267,8 @@
             <span class="card-title">4. Evalueren</span>
             <p><strong>Criteria:</strong></p>
             <ul class="indented-list">
-              <li>Beoordeelt de effectiviteit van verbeteracties</li>
-              <li>Adviseert over de verdere ontwikkeling van de organisatie</li>
               <li>
-                Evaluatie is gericht op de eerder gemaakte keuzes (diagnose en
-                ontwerp)
+                Met onderbouwde argumenten beoordeel je de effectiviteit van een verbeteractie, maatregel, beleid of project. Deze evaluatie vormt de basis voor jouw vervolgverbeteradvies dat leidt tot verdere ontwikkeling van de organisatie.
               </li>
             </ul>
             <p><strong>Reflectievraag:</strong></p>
@@ -329,9 +276,8 @@
               <li>
                 <i class="material-icons">lightbulb_outline</i>
                 <span>
-                  Hoe zal mijn onderzoeksvraag leiden tot het evalueren van de
-                  effectiviteit van verbeteracties?</span
-                >
+                  Hoe motiveert mijn onderzoeksvraag mij om tijdens het afstudeertraject bewijs te ontwikkelen dat de effectiviteit van verbeteracties en maatregelen onderbouwt?
+                </span>
               </li>
             </ul>
             <div class="input-field">
@@ -345,7 +291,7 @@
               <label for="response4">Jouw antwoord</label>
             </div>
             <p id="question4-description" class="visually-hidden">
-              Answer to question about evaluating effectiveness.
+              Antwoord op de vraag over evalueren.
             </p>
           </div>
         </div>
@@ -357,26 +303,16 @@
             <p><strong>Criteria:</strong></p>
             <ul class="indented-list">
               <li>
-                Ontwerpt en voert op methodische wijze een praktijkgericht
-                onderzoek uit
+                Je maakt een verantwoorde keuze voor een rol- en onderzoeksaanpak passend bij het bedrijfskundig vraagstuk. Je toont een kritische, nieuwsgierige en open houding, verantwoordt methodisch handelen en past beschikbare kennis toe in de praktijk door een kleinschalig, praktijkgericht onderzoek.
               </li>
-              <li>
-                Maakt een verantwoorde keuze voor een onderzoeksaanpak passend
-                bij het vraagstuk
-              </li>
-              <li>Past kennis uit beschikbaar onderzoek toe</li>
-              <li>Toont een kritische, nieuwsgierige en open houding</li>
-              <li>Verantwoordt het methodisch handelen</li>
             </ul>
             <p><strong>Reflectievraag:</strong></p>
             <ul class="reflection-list">
               <li>
                 <i class="material-icons">lightbulb_outline</i>
                 <span>
-                  Hoe stelt mijn onderzoeksvraag mij in staat om een methodisch
-                  en praktijkgericht onderzoek op te zetten dat voldoet aan de
-                  beoordelingscriteria voor onderzoekend vermogen?</span
-                >
+                  Hoe zal mijn onderzoeksvraag mij tijdens het afstudeertraject aansporen om systematisch bewijs te verzamelen dat mijn kritische, methodische en praktijkgerichte onderzoeksaanpak ondersteunt?
+                </span>
               </li>
             </ul>
             <div class="input-field">
@@ -390,7 +326,7 @@
               <label for="response5">Jouw antwoord</label>
             </div>
             <p id="question5-description" class="visually-hidden">
-              Answer to question about research capabilities.
+              Antwoord op de vraag over onderzoekend vermogen.
             </p>
           </div>
         </div>
@@ -398,27 +334,20 @@
         <!-- Vraag 6: Sociaal-communicatieve vaardigheden -->
         <div class="card">
           <div class="card-content">
-            <span class="card-title"
-              >6. Sociaal-communicatieve vaardigheden</span
-            >
+            <span class="card-title">6. Sociaal-communicatieve vaardigheden</span>
             <p><strong>Criteria:</strong></p>
             <ul class="indented-list">
               <li>
-                Zet communicatie doelbewust in en afgestemd op de doelgroep
+                Je zet communicatie doelbewust en afgestemd in op de doelgroep, creëert draagvlak bij stakeholders met uiteenlopende belangen en motiveert tot een constructieve bijdrage.
               </li>
-              <li>Creëert draagvlak bij stakeholders</li>
-              <li>Motiveert mensen tot een constructieve bijdrage</li>
-              <li>Toont bewustzijn van de persoonlijke rol</li>
-              <li>Kan gespreksvaardigheden inzetten om doelen te bereiken</li>
             </ul>
             <p><strong>Reflectievraag:</strong></p>
             <ul class="reflection-list">
               <li>
                 <i class="material-icons">lightbulb_outline</i>
                 <span>
-                  Hoe vereist mijn onderzoeksvraag effectieve communicatie met
-                  diverse stakeholders?</span
-                >
+                  Hoe stimuleert mijn onderzoeksvraag mij om tijdens het afstudeertraject bewijs te ontwikkelen dat aantoont dat ik effectief communiceer en draagvlak creëer bij diverse stakeholders?
+                </span>
               </li>
             </ul>
             <div class="input-field">
@@ -432,7 +361,7 @@
               <label for="response6">Jouw antwoord</label>
             </div>
             <p id="question6-description" class="visually-hidden">
-              Answer to question about social-communicative skills.
+              Antwoord op de vraag over sociaal-communicatieve vaardigheden.
             </p>
           </div>
         </div>
@@ -443,22 +372,17 @@
             <span class="card-title">7. Schakelen en verbinden</span>
             <p><strong>Criteria:</strong></p>
             <ul class="indented-list">
-              <li>Is regisseur van het onderzoeksproces</li>
-              <li>Kan contacten inzetten in diverse situaties</li>
               <li>
-                Legt relevante verbindingen tussen mensen, functies/disciplines
-                en niveaus
+                Je legt waardevolle en relevante relaties en gaat verbindingen aan, zowel binnen als buiten de organisatie. Je schakelt soepel tussen verschillende disciplines en belangen en houdt rekening met culturele diversiteit.
               </li>
-              <li>Is bewust van culturele diversiteit</li>
             </ul>
             <p><strong>Reflectievraag:</strong></p>
             <ul class="reflection-list">
               <li>
                 <i class="material-icons">lightbulb_outline</i>
                 <span>
-                  Hoe stelt mijn onderzoeksvraag mij in staat om het
-                  onderzoeksproces effectief te leiden?</span
-                >
+                  Hoe motiveert mijn onderzoeksvraag mij om tijdens het afstudeertraject systematisch bewijs te verzamelen dat aantoont dat ik effectief kan schakelen en relevante verbindingen kan leggen tussen diverse disciplines en belangen?
+                </span>
               </li>
             </ul>
             <div class="input-field">
@@ -472,7 +396,7 @@
               <label for="response7">Jouw antwoord</label>
             </div>
             <p id="question7-description" class="visually-hidden">
-              Answer to question about connecting and bridging.
+              Antwoord op de vraag over schakelen en verbinden.
             </p>
           </div>
         </div>
@@ -484,13 +408,7 @@
             <p><strong>Criteria:</strong></p>
             <ul class="indented-list">
               <li>
-                Verspreidt en borgt opgedane kennis ter ontwikkeling van de
-                organisatie en de beroepspraktijk
-              </li>
-              <li>Verantwoordt eigen handelen</li>
-              <li>
-                Reflecteert continu op eigen handelen en het toekomstige
-                ontwikkelproces
+                Je verspreidt en borgt opgedane kennis en levert daarmee een bijdrage aan de ontwikkeling van de organisatie en de beroepspraktijk. Tevens reflecteer je continu op je eigen handelen en ontwikkeling.
               </li>
             </ul>
             <p><strong>Reflectievraag:</strong></p>
@@ -498,10 +416,8 @@
               <li>
                 <i class="material-icons">lightbulb_outline</i>
                 <span>
-                  Hoe draagt mijn onderzoeksvraag bij aan het genereren van
-                  kennis die waardevol is voor zowel de organisatie als de
-                  bredere bedrijfskundige praktijk?</span
-                >
+                  Hoe zal mijn onderzoeksvraag mij aanzetten om tijdens het afstudeertraject bewijs te ontwikkelen dat mijn vermogen tot kennisborging, verspreiding en continue professionele ontwikkeling aantoont?
+                </span>
               </li>
             </ul>
             <div class="input-field">
@@ -515,7 +431,7 @@
               <label for="response8">Jouw antwoord</label>
             </div>
             <p id="question8-description" class="visually-hidden">
-              Answer to question about professionalization.
+              Antwoord op de vraag over professionalisering.
             </p>
           </div>
         </div>
@@ -526,11 +442,8 @@
             <span class="card-title">9. Handelen vanuit waarden</span>
             <p><strong>Criteria:</strong></p>
             <ul class="indented-list">
-              <li>Is bewust van de gehanteerde waarden en normen</li>
-              <li>Legt verantwoording af over gemaakte keuzes</li>
               <li>
-                Streeft naar duurzame en maatschappelijk verantwoorde
-                oplossingen
+                Je bent je bewust van de waarden en normen die je handelen sturen en legt hierover verantwoording af. Je streeft naar duurzame, maatschappelijk verantwoorde oplossingen.
               </li>
             </ul>
             <p><strong>Reflectievraag:</strong></p>
@@ -538,9 +451,8 @@
               <li>
                 <i class="material-icons">lightbulb_outline</i>
                 <span>
-                  Welke ethische overwegingen spelen een rol in mijn
-                  onderzoeksvraag, en hoe adresseer ik deze?</span
-                >
+                  Hoe motiveert mijn onderzoeksvraag mij om tijdens mijn afstudeertraject bewijs te verzamelen dat aantoont dat ik ethisch en maatschappelijk verantwoord handel?
+                </span>
               </li>
             </ul>
             <div class="input-field">
@@ -554,7 +466,7 @@
               <label for="response9">Jouw antwoord</label>
             </div>
             <p id="question9-description" class="visually-hidden">
-              Answer to question about acting from values.
+              Antwoord op de vraag over handelen vanuit waarden.
             </p>
           </div>
         </div>
@@ -574,7 +486,7 @@
         </div>
       </form>
 
-      <!-- Loading Spinner (hidden by default) -->
+      <!-- Loading Spinner (verborgen standaard) -->
       <div id="loadingSpinner" class="spinner-container" style="display: none">
         <div class="preloader-wrapper big active">
           <div class="spinner-layer spinner-blue">
@@ -588,7 +500,6 @@
               <div class="circle"></div>
             </div>
           </div>
-
           <div class="spinner-layer spinner-red">
             <div class="circle-clipper left">
               <div class="circle"></div>
@@ -600,7 +511,6 @@
               <div class="circle"></div>
             </div>
           </div>
-
           <div class="spinner-layer spinner-yellow">
             <div class="circle-clipper left">
               <div class="circle"></div>
@@ -612,7 +522,6 @@
               <div class="circle"></div>
             </div>
           </div>
-
           <div class="spinner-layer spinner-green">
             <div class="circle-clipper left">
               <div class="circle"></div>
@@ -647,46 +556,32 @@
       }
 
       function collectFormData() {
-        const formData = new FormData(
-          document.getElementById("selfAssessmentForm")
-        );
+        const formData = new FormData(document.getElementById("selfAssessmentForm"));
         const studentName = formData.get("studentName");
         const assessmentDate = formData.get("assessmentDate");
         const researchQuestion = formData.get("researchQuestion");
 
         if (!studentName || !assessmentDate || !researchQuestion) {
-          M.toast({ html: "Vul alle verplichte velden in!" }); // Use Materialize toast
-          return null; // Indicate validation failure
+          M.toast({ html: "Vul alle verplichte velden in!" });
+          return null;
         }
 
         const responses = Array.from({ length: 9 }, (_, i) => {
           const element = document.getElementById(`response${i + 1}`);
-          return element ? element.value : ""; // Handle potential missing elements
+          return element ? element.value : "";
         });
 
-        return {
-          studentName,
-          assessmentDate,
-          researchQuestion,
-          responses,
-        };
+        return { studentName, assessmentDate, researchQuestion, responses };
       }
 
       function generatePdfDocument(formData) {
         const { jsPDF } = window.jspdf;
-        const doc = new jsPDF({
-          orientation: "portrait",
-          unit: "pt",
-          format: "a4",
-        });
+        const doc = new jsPDF({ orientation: "portrait", unit: "pt", format: "a4" });
 
         const pageWidth = doc.internal.pageSize.getWidth();
         const pageHeight = doc.internal.pageSize.getHeight();
 
-        // Set default font
         doc.setFont("helvetica", "normal", "normal");
-
-        // Header on first page
         doc.setFontSize(16);
         doc.text("Self-Assessment Rapport", 40, 40);
         doc.setFontSize(12);
@@ -699,17 +594,16 @@
         doc.text("Onderzoeksvraag: " + formData.researchQuestion, 40, y);
         y += 30;
 
-        // Reflection questions array (for questions 1-9)
         const reflectionQuestions = [
-          "In hoeverre is mijn onderzoeksvraag gericht op een complex en integraal bedrijfskundig vraagstuk?",
-          "Hoe leidt mijn onderzoeksvraag tot het ontwerpen van meerdere oplossingsrichtingen?",
-          "Hoe adresseert mijn onderzoeksvraag de begeleiding van een complexe verandering met diverse belangen?",
-          "Hoe zal mijn onderzoeksvraag leiden tot het evalueren van de effectiviteit van verbeteracties?",
-          "Hoe stelt mijn onderzoeksvraag mij in staat om een methodisch en praktijkgericht onderzoek op te zetten dat voldoet aan de beoordelingscriteria voor onderzoekend vermogen?",
-          "Hoe vereist mijn onderzoeksvraag effectieve communicatie met diverse stakeholders?",
-          "Hoe stelt mijn onderzoeksvraag mij in staat om het onderzoeksproces effectief te leiden?",
-          "Hoe draagt mijn onderzoeksvraag bij aan het genereren van kennis die waardevol is voor zowel de organisatie als de bredere bedrijfskundige praktijk?",
-          "Welke ethische overwegingen spelen een rol in mijn onderzoeksvraag, en hoe adresseer ik deze?",
+          "Hoe zal mijn onderzoeksvraag mij tijdens het afstudeertraject stimuleren om bewijs te ontwikkelen dat aantoont dat ik een complex probleem herken en diagnosticeer met de juiste analysetechnieken?",
+          "Hoe motiveert mijn onderzoeksvraag mij om tijdens het afstudeertraject diverse scenario’s en een helder voorkeursontwerp te ontwikkelen, zodat ik bewijs lever voor mijn ontwerpkracht?",
+          "Hoe zal mijn onderzoeksvraag mij aanzetten om gedurende het afstudeertraject systematisch bewijs te verzamelen dat aantoont dat ik complexe veranderprocessen kan begeleiden en draagvlak creëer?",
+          "Hoe motiveert mijn onderzoeksvraag mij om tijdens het afstudeertraject bewijs te ontwikkelen dat de effectiviteit van verbeteracties en maatregelen onderbouwt?",
+          "Hoe zal mijn onderzoeksvraag mij tijdens het afstudeertraject aansporen om systematisch bewijs te verzamelen dat mijn kritische, methodische en praktijkgerichte onderzoeksaanpak ondersteunt?",
+          "Hoe stimuleert mijn onderzoeksvraag mij om tijdens het afstudeertraject bewijs te ontwikkelen dat aantoont dat ik effectief communiceer en draagvlak creëer bij diverse stakeholders?",
+          "Hoe motiveert mijn onderzoeksvraag mij om tijdens het afstudeertraject systematisch bewijs te verzamelen dat aantoont dat ik effectief kan schakelen en relevante verbindingen kan leggen tussen diverse disciplines en belangen?",
+          "Hoe zal mijn onderzoeksvraag mij aanzetten om tijdens het afstudeertraject bewijs te ontwikkelen dat mijn vermogen tot kennisborging, verspreiding en continue professionele ontwikkeling aantoont?",
+          "Hoe motiveert mijn onderzoeksvraag mij om tijdens mijn afstudeertraject bewijs te verzamelen dat aantoont dat ik ethisch en maatschappelijk verantwoord handel?"
         ];
 
         const xOffsetQuestion = 40;
@@ -718,18 +612,14 @@
         doc.setFontSize(12);
 
         for (let i = 0; i < 9; i++) {
-          // Process the question
-          const question = i + 1 + ". " + reflectionQuestions[i];
-          let questionLines = doc.splitTextToSize(
-            question,
-            pageWidth - 2 * xOffsetQuestion - 20
-          );
+          const question = (i + 1) + ". " + reflectionQuestions[i];
+          let questionLines = doc.splitTextToSize(question, pageWidth - 2 * xOffsetQuestion - 20);
 
           if (y + questionLines.length * 14 + 20 > pageHeight - 50) {
             doc.addPage();
             y = 70;
             addPageHeader(doc);
-            doc.setFontSize(12); // Reset font size for content
+            doc.setFontSize(12);
           }
 
           for (const line of questionLines) {
@@ -738,18 +628,14 @@
           }
           y += 5;
 
-          // Process the answer
           const answer = "Antwoord: " + formData.responses[i];
-          let answerLines = doc.splitTextToSize(
-            answer,
-            pageWidth - 2 * xOffsetAnswer - 20
-          );
+          let answerLines = doc.splitTextToSize(answer, pageWidth - 2 * xOffsetAnswer - 20);
 
           if (y + answerLines.length * 14 + 20 > pageHeight - 50) {
             doc.addPage();
             y = 70;
             addPageHeader(doc);
-            doc.setFontSize(12); // Reset font size for content
+            doc.setFontSize(12);
           }
 
           for (const line of answerLines) {
@@ -759,7 +645,6 @@
           y += 30;
         }
 
-        // General Reflection questions at the end
         doc.setFontSize(12);
         doc.text("Algemene Reflectie", 40, y);
         y += 20;
@@ -767,69 +652,59 @@
         const generalQuestions = [
           "In hoeverre biedt mijn onderzoeksvraag voldoende aanknopingspunten om alle eindkwalificaties aan te tonen?",
           "Welke aspecten van mijn onderzoeksvraag kunnen verder worden ontwikkeld of aangescherpt om beter aan te sluiten bij de beoordelingscriteria?",
-          "Hoe zorg ik ervoor dat mijn onderzoek een integrale bijdrage levert aan zowel mijn eigen professionele ontwikkeling als aan de organisatie en de bredere maatschappij?",
+          "Hoe zorg ik ervoor dat mijn onderzoek een integrale bijdrage levert aan zowel mijn professionele ontwikkeling als aan de organisatie en maatschappij?"
         ];
 
         for (let i = 0; i < 3; i++) {
-          const question = i + 1 + ". " + generalQuestions[i];
+          const question = (i + 1) + ". " + generalQuestions[i];
           let questionLines = doc.splitTextToSize(question, pageWidth - 80);
 
           if (y + questionLines.length * 14 + 20 > pageHeight - 50) {
             doc.addPage();
             y = 70;
             addPageHeader(doc);
-            doc.setFontSize(12); // Reset font size for content
+            doc.setFontSize(12);
           }
           doc.text(questionLines, 40, y);
           y += questionLines.length * 14 + 20;
         }
 
-        // Footer with page numbers on all pages
         const totalPages = doc.internal.getNumberOfPages();
         doc.setFontSize(10);
         for (let i = 1; i <= totalPages; i++) {
           doc.setPage(i);
           const footerText = `Pagina ${i} van ${totalPages}`;
-          doc.text(
-            footerText,
-            pageWidth / 2 - doc.getTextWidth(footerText) / 2,
-            pageHeight - 30
-          );
+          doc.text(footerText, pageWidth / 2 - doc.getTextWidth(footerText) / 2, pageHeight - 30);
         }
 
         return doc;
       }
 
       function addPageHeader(doc) {
-        // Add header content (header font size is set to 14)
         doc.setFontSize(14);
         doc.text("Self-Assessment Rapport", 40, 40);
       }
 
       function savePdfFile(doc, name) {
-        const fileName =
-          "self-assessment-rapport-" + name.toLowerCase() + ".pdf";
+        const fileName = "self-assessment-rapport-" + name.toLowerCase() + ".pdf";
         doc.save(fileName);
       }
 
       document.getElementById("savePdf").addEventListener("click", function () {
-        showLoadingSpinner(); // Show loading spinner
+        showLoadingSpinner();
         try {
           const formData = collectFormData();
           if (!formData) {
-            hideLoadingSpinner(); // Hide loading spinner if validation fails
-            return; // Validation failed
+            hideLoadingSpinner();
+            return;
           }
-
           const doc = generatePdfDocument(formData);
           savePdfFile(doc, formData.studentName);
         } catch (error) {
           console.error("Fout bij het genereren van PDF:", error);
-          M.toast({
-            html: "Er is een fout opgetreden bij het genereren van de PDF. Zie de console voor details.",
-          }); // Use Materialize toast
+          M.toast({ html: "Er is een fout opgetreden bij het genereren van de PDF. Zie de console voor details." });
         } finally {
-          hideLoadingSpinner(); // Always hide loading spinner after attempt (success or failure)
+          hideLoadingSpinner();
         }
       });
     </script>
